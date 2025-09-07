@@ -12,12 +12,11 @@ end)
 
 script.on_load(function()
     -- Code to run when a save is loaded
-    print("Nauvis Foundry Mod loaded 1")
-    game.print("Nauvis Foundry Mod loaded 2")
+    game.print("Easier science loadedd")
 end)
 
 script.on_event(defines.events.on_console_command, function()
-    
+
 end)
 
 -- Example event handler
