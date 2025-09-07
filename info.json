@@ -1,0 +1,21 @@
+{
+    "name": "easier_science",
+    "version": "0.1.0",
+    "title": "Easier Science",
+    "author": "lesacar",
+    "contact": "",
+    "homepage": "",
+    "description": "Make science easier to craft by only requiring 1 thematic ingredient",
+    "factorio_version": "2.0",
+    "dependencies": [
+        "base >= 2.0",
+        "space-age",
+        "quality"
+    ],
+    "quality_required": true,
+    "space_travel_required": true,
+    "spoiling_required": true,
+    "freezing_required": true,
+    "segmented_units_required": true,
+    "expansion_shaders_required": true
+}

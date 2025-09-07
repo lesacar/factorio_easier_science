@@ -1,0 +1,12 @@
+{
+    "Lua.workspace.userThirdParty": [
+        "c:\\Users\\user\\AppData\\Roaming\\Code\\User\\workspaceStorage\\456e4a00a941f064fbfbeabb08299e1e\\justarandomgeek.factoriomod-debug\\sumneko-3rd"
+    ],
+    "Lua.workspace.checkThirdParty": "ApplyInMemory",
+    "factorio.versions": [
+        {
+            "name": "Factorio 2.0.60",
+            "factorioPath": "d:\\games\\Factorio\\bin\\x64\\factorio.exe"
+        }
+    ]
+}
