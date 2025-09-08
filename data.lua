@@ -195,11 +195,9 @@ data:extend({
             {type = "item", name = "copper-plate", amount = 1}
         },
         results = {
-            {type = "item", name = "speed-module-3", amount = 1, quality = "legendary"}
+            {type = "item", name = "speed-module-3", quality = "legendary", amount = 1}
         },
         enabled = false,
-        icon = "__base__/graphics/icons/speed-module-3.png",
-        icon_size = 64,
         subgroup = "intermediate-product"
     },
     {
@@ -212,10 +210,9 @@ data:extend({
             {type = "item", name = "copper-plate", amount = 1}
         },
         results = {
-            {type = "item", name = "productivity-module-3", amount = 1, quality = "legendary"}
+            {type = "item", name = "productivity-module-3", quality = "legendary", amount = 1}
         },
         enabled = false,
-        icon = "__base__/graphics/icons/productivity-module-3.png",
         icon_size = 64,
         subgroup = "intermediate-product"
     },
@@ -229,10 +226,9 @@ data:extend({
             {type = "item", name = "copper-plate", amount = 1}
         },
         results = {
-            {type = "item", name = "efficiency-module-3", amount = 1, quality = "legendary"}
+            {type = "item", name = "efficiency-module-3", quality = "legendary", amount = 1}
         },
         enabled = false,
-        icon = "__base__/graphics/icons/efficiency-module-3.png",
         icon_size = 64,
         subgroup = "intermediate-product"
     },
@@ -246,10 +242,9 @@ data:extend({
             {type = "item", name = "copper-plate", amount = 1}
         },
         results = {
-            {type = "item", name = "quality-module-3", amount = 1, quality = "legendary"}
+            {type = "item", name = "quality-module-3", quality = "legendary", amount = 1}
         },
         enabled = false,
-        icon = "__base__/graphics/icons/quality-module-3.png",
         icon_size = 64,
         subgroup = "intermediate-product"
     }
