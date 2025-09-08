@@ -10,7 +10,8 @@
     "dependencies": [
         "base >= 2.0",
         "space-age",
-        "quality"
+        "quality",
+        "quality-recipes-core"
     ],
     "quality_required": true,
     "space_travel_required": true,

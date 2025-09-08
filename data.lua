@@ -12,7 +12,7 @@ science_crafter.name = "science-crafter"
 science_crafter.minable.result = "science-crafter"
 science_crafter.crafting_speed = am3.crafting_speed
 -- remove default assembler recipes and only allow our modded recipes
-science_crafter.crafting_categories = {"science-crafter"}
+science_crafter.crafting_categories = {"science-crafter", "sc_module-crafter"}
 
 -- Add the entity to data
 data:extend({science_crafter})
@@ -36,6 +36,10 @@ data:extend({
     {
         type = "recipe-category",
         name = "science-crafter"
+    },
+    {
+        type = "recipe-category",
+        name = "sc_module-crafter"
     }
 })
 
@@ -55,7 +59,7 @@ data:extend({
         enabled = false,
         icon = "__base__/graphics/icons/lab.png",
         icon_size = 64,
-        subgroup = "intermediate-product"
+        subgroup = "production-machine"
     },
 })
 
@@ -162,7 +166,8 @@ data:extend({
         icon_size = 64,
         subgroup = "intermediate-product"
     },
-        {
+    -- Space Science (Space)
+    {
         type = "recipe",
         name = "sc_space_science",
         category = "science-crafter",
@@ -176,6 +181,75 @@ data:extend({
         },
         enabled = false,
         icon = "__base__/graphics/icons/utility-science-pack.png",
+        icon_size = 64,
+        subgroup = "intermediate-product"
+    },
+    -- MODULES
+    {
+        type = "recipe",
+        name = "qrc_legendary_speed-module-3",
+        category = "sc_module-crafter",
+        energy_required = 1,
+        ingredients = {
+            {type = "item", name = "iron-plate", amount = 1},
+            {type = "item", name = "copper-plate", amount = 1}
+        },
+        results = {
+            {type = "item", name = "speed-module-3", amount = 1, quality = "legendary"}
+        },
+        enabled = false,
+        icon = "__base__/graphics/icons/speed-module-3.png",
+        icon_size = 64,
+        subgroup = "intermediate-product"
+    },
+    {
+        type = "recipe",
+        name = "qrc_legendary_productivity-module-3",
+        category = "sc_module-crafter",
+        energy_required = 1,
+        ingredients = {
+            {type = "item", name = "iron-plate", amount = 1},
+            {type = "item", name = "copper-plate", amount = 1}
+        },
+        results = {
+            {type = "item", name = "productivity-module-3", amount = 1, quality = "legendary"}
+        },
+        enabled = false,
+        icon = "__base__/graphics/icons/productivity-module-3.png",
+        icon_size = 64,
+        subgroup = "intermediate-product"
+    },
+    {
+        type = "recipe",
+        name = "qrc_legendary_efficiency-module-3",
+        category = "sc_module-crafter",
+        energy_required = 1,
+        ingredients = {
+            {type = "item", name = "iron-plate", amount = 1},
+            {type = "item", name = "copper-plate", amount = 1}
+        },
+        results = {
+            {type = "item", name = "efficiency-module-3", amount = 1, quality = "legendary"}
+        },
+        enabled = false,
+        icon = "__base__/graphics/icons/efficiency-module-3.png",
+        icon_size = 64,
+        subgroup = "intermediate-product"
+    },
+    {
+        type = "recipe",
+        name = "qrc_legendary_quality-module-3",
+        category = "sc_module-crafter",
+        energy_required = 1,
+        ingredients = {
+            {type = "item", name = "iron-plate", amount = 1},
+            {type = "item", name = "copper-plate", amount = 1}
+        },
+        results = {
+            {type = "item", name = "quality-module-3", amount = 1, quality = "legendary"}
+        },
+        enabled = false,
+        icon = "__base__/graphics/icons/quality-module-3.png",
         icon_size = 64,
         subgroup = "intermediate-product"
     }
@@ -211,9 +285,28 @@ table.insert(data.raw["technology"]["space-science-pack"].effects, {
     recipe = "sc_space_science"
 })
 
+-- add module recipes to technologies
+table.insert(data.raw["technology"]["speed-module"].effects, {
+    type = "unlock-recipe",
+    recipe = "qrc_legendary_speed-module-3"
+})
+table.insert(data.raw["technology"]["speed-module"].effects, {
+    type = "unlock-recipe",
+    recipe = "qrc_legendary_productivity-module-3"
+})
+table.insert(data.raw["technology"]["speed-module"].effects, {
+    type = "unlock-recipe",
+    recipe = "qrc_legendary_efficiency-module-3"
+})
+table.insert(data.raw["technology"]["speed-module"].effects, {
+    type = "unlock-recipe",
+    recipe = "qrc_legendary_quality-module-3"
+})
+
 -- and also don't forget to add science-crafter itself to technologies
 -- automation-2 is assembling machine 2 tech node
 table.insert(data.raw["technology"]["automation-2"].effects, {
     type = "unlock-recipe",
     recipe = "sc_science-crafter"
 })
+

@@ -12,12 +12,18 @@ end)
 
 script.on_load(function()
     -- Code to run when a save is loaded
-    game.print("Easier science loadedd")
 end)
 
 script.on_event(defines.events.on_console_command, function()
 
 end)
+
+script.on_event(defines.events.on_player_created, function(event)
+    game.print("Easier science loaded")
+end)
+
+
+
 
 -- Example event handler
 -- script.on_event(defines.events.on_tick, function(event)
